@@ -1,18 +1,9 @@
 import React from 'react'
-import Aklogo from "../../assets/aklogo.png";
-import AriseLogo from "../../assets/image7.png";
-import { useNavigate } from "react-router-dom";
-import AgentApplicationForm from "./Forms/AgentApplicationForm";
+import Aklogo from "../../../assets/aklogo.png";
+import AriseLogo from "../../../assets/image7.png";
+import AgentLoginForm from './AgentLoginForm';
 
-export default function AgentsRegistrationForm() {
-
-    let navigate = useNavigate();
-
-    function AuthenticateAgent(){
-        //write your logic to submit the form to the endpoint given
-        // use the backend api here
-        navigate("/agent/api/authentication?");
-    }
+export default function AgentLoginScreen() {
   return (
     <div>
         <div className="relative w-screen h-screen bg-[#FBFBEA]">
@@ -27,19 +18,19 @@ export default function AgentsRegistrationForm() {
 
             <div className="flex pl-5 text-6xl font-bold mt-10 bg-[#FBFBEA]">
                 <div className="pt-10 ml-40 font-bold text-7xl leading-tight bg-[#FBFBEA]">
-                <p className='text-lg text-[#00621C] p-3'>Welcome Register as an Agent</p>
+                <p className='text-lg text-[#00621C] p-3'>Welcome Login as an Agent</p>
                     <p>Akwa Ibom State</p>
 
                     <p> Subsidy</p>
                     <p className="text-[#FD6502]">   Programme
                     </p>
                     <p className="text-[#00621C] mt-10 text-lg font-normal">
-                Akwa Ibom State Governor, Pastor Umo Eno, signed the BulkPurchase Agency <br /> and Assets Management and Maintenance Agency Bills, these is aimed at<br /> reducing the high cost of staple food in the state to cushion the effect of harsh <br />economic realities .
+                Akwa Ibom State Governor, Pastor Umo Eno, signed the BulkPurchase Agency <br /> and Assets Management and Maintenance Agency Bills, these is aimed at<br /> reducing the high cost of staple food in the state to cushion the effect of harsh <br />economic realities.
             </p>
            
                 </div>
                 {/* <img src={AriseLogo} width={400} className="ml-80" /> */}
-                <AgentApplicationForm/>
+                <AgentLoginForm/>
             </div>
             <div className="pb-40 bg-[#FBFBEA]">{" "}</div>
         </div>

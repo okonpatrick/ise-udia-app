@@ -4,6 +4,8 @@ import TotalNumberComponent from "./components/TotalNumberComponent";
 import AboutSection from "./components/AboutSection";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Corrected import statement
 import AgentsRegistrationForm from "./components/Agents/AgentsRegistrationForm";
+import AgentLoginScreen from './components/Agents/Forms/AgentLoginScreen';
+import BeneficiaryLoginForm from './components/Beneficiary/BeneficiaryLoginForm';
 
 function App() {
   return (
@@ -16,11 +18,11 @@ function App() {
             <LoginMenu /><TotalNumberComponent />
             <AboutSection />
           </>} />
-          
+          <Route path='/agent/login' element={<AgentLoginScreen/>}/>
+          <Route path='/beneficiary/login' element={<BeneficiaryLoginForm/>}/>
+
         </Routes>
       </Router>
-
-
     </>
   );
 }

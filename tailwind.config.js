@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       margin: {
-        'custom': '120px',
+        'shiftTransactionHisBtn': '550px'
       }
     },
   },

@@ -7,7 +7,7 @@ import userIcon from "../../assets/Ellipse.png";
 export default function BeneficiaryNavBar() {
   return (
     <>
-    <div className='flex mt-2 mb-5 ml-10'>
+    <div className='flex mt-2 mb-5 ml-20'>
         <img className='ml-20' src={Aklogo} width={70} alt="Akwa Ibom State logo" />
         <img className='ml-4' src={AriseLogo} width={70} alt="Arise logo" />
         <div className='mr-60'></div>

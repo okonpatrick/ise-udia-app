@@ -55,7 +55,7 @@ export default function AgentLoginForm() {
 
                             <div>
                                 <label htmlFor="text" className="block mb-2 text-sm font-medium">Identification Number</label>
-                                <input type="text" value={isIDNumber} onChange={(e) => setisIDNumber(e.target.value)} name="text" id="password" placeholder="your login ID..." className="font-normal bg-white border  text-black sm:text-sm rounded-2xl focus:ring-white focus:border-white block w-full p-4 dark:bg-gray-700 dark:border-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 " required />
+                                <input type="number" value={isIDNumber} onChange={(e) => setisIDNumber(e.target.value)} name="text" id="password" placeholder="your login ID..." className="font-normal bg-white border  text-black sm:text-sm rounded-2xl focus:ring-white focus:border-white block w-full p-4 dark:bg-gray-700 dark:border-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 " required />
                             </div>
                             <div>
                                 <label htmlFor="password" className="block mb-2 text-sm font-medium text-black">Password</label>

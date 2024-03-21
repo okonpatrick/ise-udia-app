@@ -39,7 +39,7 @@ export default function AgentLoginForm() {
     }
 
     return (<>
-        <div><section className="">
+        <div><section className=""style={{ marginTop: "-60px" }}>
             <div className="flex flex-col items-center justify-center px-20 py-8 md:h-screen lg:py-0">
 
                 <div className="w-full bg-[#B0CEB9] rounded-3xl shadow ">

@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Co
 import AgentsRegistrationForm from "./components/Agents/AgentsRegistrationForm";
 import AgentLoginScreen from './components/Agents/Forms/AgentLoginScreen';
 import BeneficiaryLoginForm from './components/Beneficiary/BeneficiaryLoginForm';
+import BeneficiaryDashboard from './components/Beneficiary/BeneficiaryDashboard';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
           </>} />
           <Route path='/agent/login' element={<AgentLoginScreen/>}/>
           <Route path='/beneficiary/login' element={<BeneficiaryLoginForm/>}/>
+          <Route path='/beneficiary/dashboard' element={<BeneficiaryDashboard/>}/>
+
 
         </Routes>
       </Router>

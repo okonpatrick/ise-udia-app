@@ -6,9 +6,9 @@ import { useNavigate } from "react-router-dom";
 
 export default function BeneficiaryLoginForm() {
 
-    let navigate = useNavigate();
     const [isIDNumber, setisIDNumber] = useState('');
     const [isPassword, setisPassword] = useState('');
+    let navigate = useNavigate();
 
     function LessThanFunc() {
         //come back to this
@@ -19,7 +19,7 @@ export default function BeneficiaryLoginForm() {
 
     function BeneficiaryLoginForm() {
         alert("Welcome back! Your details have been submitted!")
-        navigate("/beneficiary/login");
+        navigate("/beneficiary/dashboard");
         //write logic to handle submission to database!
         return (
             <>
@@ -44,8 +44,8 @@ export default function BeneficiaryLoginForm() {
                 <div className="flex pt-0 pl-5 pb-0">
                     <img className=" ml-40 pt-3 w-50px h-52.21px" src={Aklogo} alt="Akwa Ibom State logo" />
                     <div className="ml-80 pl-40 pt-12 text-lg">
-                        <span className="mr-10 ml-60 text-[#00621C]">Store locator</span>
-                        <span className="mr-20 text-[#00621C]">Contact Support</span>
+                        <span className="mr-10 ml-60 text-[#00621C]"><a href='store-locator'>Store locator</a></span>
+                        <span className="mr-20 text-[#00621C]"><a href='store-locator'>Contact Support</a></span>
                     </div>
                 </div>
 
@@ -66,7 +66,7 @@ export default function BeneficiaryLoginForm() {
 
                                     <div>
                                         <label htmlFor="text" className="block mb-2 text-sm font-medium">Identification Number</label>
-                                        <input type="text" value={isIDNumber} onChange={(e) => setisIDNumber(e.target.value)} name="text" id="password" placeholder="your login ID..." className="font-normal bg-white border  text-black sm:text-sm rounded-2xl focus:ring-white focus:border-white block w-full p-4 dark:bg-gray-700 dark:border-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 " required />
+                                        <input type="number" value={isIDNumber} onChange={(e) => setisIDNumber(e.target.value)} name="text" id="password" placeholder="your login ID..." className="font-normal bg-white border  text-black sm:text-sm rounded-2xl focus:ring-white focus:border-white block w-full p-4 dark:bg-gray-700 dark:border-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 " required />
                                     </div>
                                     <div>
                                         <label htmlFor="password" className="block mb-2 text-sm font-medium text-black">Password</label>
